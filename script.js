@@ -1,268 +1,412 @@
 const skills = [
   {
-    label: "Automation",
-    title: "Framework and execution",
-    items: ["Playwright", "Cypress", "Selenium"]
+    label: "Quality Engineering",
+    title: "Strategy & process",
+    items: [
+      "Risk-Based Testing",
+      "Shift-Left Testing",
+      "Test Planning",
+      "Root Cause Analysis",
+      "Release Quality Assessment"
+    ]
   },
   {
-    label: "Languages",
+    label: "Test Automation",
+    title: "Framework development",
+    items: [
+      "Playwright (TS/Java)",
+      "Selenium WebDriver",
+      "Katalon Studio",
+      "POM Architecture",
+      "Parallel Execution"
+    ]
+  },
+  {
+    label: "API Testing",
+    title: "Backend validation",
+    items: [
+      "RESTful APIs",
+      "Postman",
+      "Playwright API",
+      "Ajv Schema Validation",
+      "Burp Suite"
+    ]
+  },
+  {
+    label: "Database",
+    title: "Data verification",
+    items: [
+      "PostgreSQL",
+      "MySQL",
+      "SQL Server",
+      "Data Integrity",
+      "Backend Troubleshooting"
+    ]
+  },
+  {
+    label: "Performance",
+    title: "Non-functional testing",
+    items: [
+      "JMeter",
+      "UX Testing",
+      "Exploratory Testing",
+      "Compatibility Testing",
+      "Security Awareness"
+    ]
+  },
+  {
+    label: "CI/CD",
+    title: "Pipeline integration",
+    items: [
+      "GitLab CI/CD",
+      "Jenkins",
+      "GitLab Runner",
+      "Allure Reporting",
+      "Continuous Testing"
+    ]
+  },
+  {
+    label: "Programming",
     title: "Implementation stack",
-    items: ["JavaScript", "TypeScript", "Java"]
+    items: [
+      "TypeScript",
+      "Java",
+      "SQL",
+      "JUnit / TestNG",
+      "Cucumber BDD"
+    ]
+  },
+  {
+    label: "AI & Modern QA",
+    title: "Next-generation testing",
+    items: [
+      "AI Test Design",
+      "Cursor / Codex",
+      "Failure Pattern Detection",
+      "Regression Impact Analysis",
+      "Quality Metrics Automation"
+    ]
+  }
+];
+
+const domains = [
+  {
+    label: "E-Commerce",
+    title: "Marketplace & retail",
+    items: [
+      "Tiki / Ticketbox",
+      "Amaze Marketplace",
+      "Voucher Systems",
+      "Seller Center",
+      "Promotion Engines"
+    ]
+  },
+  {
+    label: "Fintech",
+    title: "Payments & wallets",
+    items: [
+      "MoMo eKYC",
+      "ShopeePay",
+      "Payment Gateway",
+      "Face Matching",
+      "Digital Wallet"
+    ]
+  },
+  {
+    label: "Healthcare",
+    title: "Digital health",
+    items: [
+      "Elfie Health",
+      "Web Platform",
+      "Mobile Application",
+      "Quality Process",
+      "Automation Framework"
+    ]
+  },
+  {
+    label: "Digital Products",
+    title: "Cross-platform delivery",
+    items: [
+      "SaaS Platforms",
+      "React / React Native",
+      "Flutter Exposure",
+      ".NET Backend",
+      "Agile Development"
+    ]
+  }
+];
+
+const certifications = [
+  {
+    label: "Agile",
+    title: "Scrum Master Certification",
+    items: ["Axon Active", "Scrum Framework", "Sprint Planning", "Retrospectives"]
+  },
+  {
+    label: "API",
+    title: "RESTful API Certification",
+    items: ["TVN", "REST Architecture", "Authentication", "Contract Validation"]
   },
   {
     label: "Testing",
-    title: "Coverage areas",
-    items: ["API", "Web", "Mobile", "Performance"]
+    title: "TestMu 101",
+    items: ["Test Automation University", "Testing Principles", "Quality Mindset"]
   },
   {
-    label: "DevOps",
-    title: "Delivery and pipelines",
-    items: ["Docker", "CI/CD", "GitHub Actions"]
+    label: "Automation",
+    title: "TestMu 102",
+    items: ["Test Automation University", "Automation Strategy", "CI/CD Testing"]
   }
 ];
 
 const projects = [
   {
-    title: "E-voucher Quality Coverage",
-    type: "TIKI / Ticketbox",
-    year: "2022 - 2023",
+    title: "Playwright Automation Framework",
+    type: "Elfie Health",
+    year: "2025 – Present",
     summary:
-      "Quality ownership for voucher-related e-commerce flows where release confidence depended on stable coverage across user journeys and payment-adjacent behavior.",
-    metrics: [
-      "3 platforms",
-      "Web / mWeb / App",
-      "Voucher + payment flows"
-    ],
+      "Built a Playwright + TypeScript automation framework from scratch for Web and Mobile quality coverage, with BDD principles and CI integration.",
+    metrics: ["From scratch", "POM + API layer", "Allure + GitLab CI"],
     bullets: [
-      "Tested critical user flows across Web, mWeb, and App for voucher-driven commerce features.",
-      "Combined manual validation, release coordination, and automation exposure to reduce blind spots during rollout.",
-      "Worked closely with GA4-sensitive and payment-adjacent journeys where small regressions could affect business behavior."
+      "Designed Page Object Model, reusable utilities, and environment management.",
+      "Integrated Ajv schema validation, HTML/Allure reporting, and parallel execution.",
+      "Converted manual test cases into automation assets for regression cycles.",
+      "Applied Cucumber BDD and collaborated closely with developers on shift-left quality."
     ],
-    tags: ["E-commerce", "Voucher", "Payments", "Cross-platform", "GA4"],
+    tags: ["Playwright", "TypeScript", "POM", "Ajv", "GitLab CI/CD", "Cucumber"],
     links: [
-      { label: "Experience", href: "#timeline" },
-      { label: "Architecture", href: "#architecture" }
+      { label: "Architecture", href: "#architecture" },
+      { label: "Experience", href: "#timeline" }
     ]
   },
   {
-    title: "API Automation at TIKI",
-    type: "Internal QA System",
-    year: "2022 - 2023",
+    title: "Payment Systems Validation",
+    type: "ShopeeFood",
+    year: "2023 – 2025",
     summary:
-      "Built API automation with Postman to move repeated backend verification into reusable test assets and support cleaner release checks.",
-    metrics: [
-      "1 API automation base",
-      "Postman-driven",
-      "Release support"
-    ],
+      "End-to-end quality for payment flows across ShopeePay, voucher packages, and partner promotions in a high-scale consumer platform.",
+    metrics: ["ShopeePay", "Voucher packages", "Partner promotions"],
     bullets: [
-      "Created API automation flows to cover service-level validation more consistently than repetitive manual checks.",
-      "Improved repeatability for backend verification during release cycles and defect confirmation.",
-      "Used automation as a practical bridge from execution-heavy QA toward reusable quality systems."
+      "Validated payment flows with CyberSource, MoMo, VNPAY, and Internet Banking.",
+      "Automated regression using Selenium Java with API testing and SQL validation.",
+      "Performed exploratory and UX testing on promotion and voucher systems.",
+      "Supported release quality in a fast-shipping product environment."
     ],
-    tags: ["Postman", "API Testing", "Release QA", "Regression"],
+    tags: ["Selenium Java", "Payment Gateway", "API Testing", "SQL", "Fintech"],
     links: [
       { label: "Experience", href: "#timeline" },
-      { label: "Roadmap", href: "#roadmap" }
+      { label: "Domains", href: "#domains" }
     ]
   },
   {
-    title: "KYC-OCR Quality Validation",
-    type: "MoMo",
+    title: "E-Voucher & Ticketbox Platform",
+    type: "Tiki Corporation",
+    year: "2022 – 2023",
+    summary:
+      "Quality ownership for voucher-driven e-commerce across Web, mWeb, and App — with API automation and performance testing.",
+    metrics: ["E-voucher platform", "Ticketbox", "JMeter performance"],
+    bullets: [
+      "Built API automation flows and E2E voucher purchase automation with Selenium and Postman.",
+      "Performed performance testing using JMeter on critical commerce journeys.",
+      "Covered GA4-sensitive flows, promotion engines, and payment-adjacent behavior.",
+      "Led small-team task assignment, timeline control, and release reporting."
+    ],
+    tags: ["Postman", "Selenium", "JMeter", "E-commerce", "Voucher"],
+    links: [
+      { label: "Experience", href: "#timeline" },
+      { label: "Projects", href: "#projects" }
+    ]
+  },
+  {
+    title: "eKYC & Face Matching",
+    type: "MoMo E-Wallet",
     year: "2021",
     summary:
-      "Quality assurance for a KYC-OCR e-wallet domain where trust, data validation, and mobile behavior had to be verified with precision.",
-    metrics: [
-      "3 validation layers",
-      "Mobile + API + SQL",
-      "Trust-sensitive domain"
-    ],
+      "System and integration testing for trust-sensitive wallet features including eKYC, face matching, and passwordless login.",
+    metrics: ["eKYC", "Face matching", "My Wallet"],
     bullets: [
-      "Worked across mobile app testing, API testing, and SQL validation to verify end-to-end correctness.",
-      "Focused on a domain where defects could directly affect onboarding quality and trust signals.",
-      "Strengthened data-aware QA practices before moving deeper into framework and automation work."
+      "Executed system, integration, GUI, and A/B testing across mobile wallet flows.",
+      "Validated backend data with SQL across authentication and onboarding journeys.",
+      "Analyzed requirements and identified quality risks in a fintech compliance context.",
+      "Strengthened data-aware QA practices for trust-critical user experiences."
     ],
-    tags: ["KYC-OCR", "Mobile QA", "API", "SQL", "Fintech"],
+    tags: ["Mobile QA", "eKYC", "SQL", "Integration Testing", "Fintech"],
     links: [
       { label: "Experience", href: "#timeline" },
-      { label: "Career Path", href: "#roadmap" }
+      { label: "Domains", href: "#domains" }
     ]
   },
   {
-    title: "QA Framework Direction",
-    type: "Current Focus",
-    year: "2025 - Now",
+    title: "Multi-Project SDET Foundation",
+    type: "Kyanon Digital",
+    year: "2018 – 2021",
     summary:
-      "Current work direction centered on reusable automation architecture, quality tooling, and the path toward Agent-Q style evaluation systems.",
-    metrics: [
-      "5+ years QA",
-      "5 companies",
-      "API / Web / Mobile"
-    ],
+      "Multi-project QA across Samsung, Nippon, Our Better World, and NgayDauTien — with early automation adoption and SDET process implementation.",
+    metrics: ["4+ client projects", "Scrum delivery", "Early automation"],
     bullets: [
-      "Building toward framework-first QA instead of isolated script execution.",
-      "Connecting automation, reporting, and CI thinking into a more scalable quality model.",
-      "Using past product and domain experience as the base for reusable quality systems."
+      "Handled requirement analysis, client support, and structured Scrum delivery.",
+      "Implemented SDET processes and built automation with Selenium and Katalon Studio.",
+      "Grew from manual QA foundations into framework-oriented automation thinking.",
+      "Developed cross-functional communication and test coordination skills."
     ],
-    tags: ["Frameworks", "Quality Tooling", "Agent-Q", "CI Thinking"],
+    tags: ["Katalon", "Selenium", "Scrum", "SDET", "Manual QA"],
     links: [
       { label: "Roadmap", href: "#roadmap" },
-      { label: "Contact", href: "#contact" }
+      { label: "Experience", href: "#timeline" }
     ]
   }
 ];
 
 const metrics = [
   {
-    value: "5+",
+    value: "7+",
     title: "Years in QA",
-    copy: "From multi-project manual QA to automation, framework direction, and quality systems thinking."
+    copy: "From multi-project manual QA through automation, framework architecture, and quality engineering leadership."
   },
   {
     value: "5",
     title: "Companies",
-    copy: "Hands-on experience across product, e-commerce, fintech, and service-based delivery environments."
+    copy: "Elfie, ShopeeFood, Tiki, MoMo, and Kyanon — across product, e-commerce, fintech, and healthcare."
+  },
+  {
+    value: "4",
+    title: "Industry Domains",
+    copy: "E-commerce, Fintech, Healthcare, and Digital Products with deep payment and voucher expertise."
   },
   {
     value: "3",
     title: "Platform Surfaces",
-    copy: "Worked across Web, mWeb, and App coverage instead of limiting quality scope to a single layer."
-  },
-  {
-    value: "4+",
-    title: "Automation Stacks",
-    copy: "Used Postman, Selenium, Playwright, and Katalon while growing toward framework-level reuse."
+    copy: "Web, Mobile, and API coverage with CI-integrated automation instead of single-layer testing."
   }
 ];
 
 const roadmap = [
   {
     step: "01",
-    range: "2018 - 2021",
-    title: "Manual QA Foundations",
-    copy: "Built product instincts through exploratory testing, Scrum delivery, and early web automation exposure."
+    range: "2018 – 2021",
+    title: "Traditional QA",
+    copy: "Built foundations through multi-project manual testing, Scrum delivery, and early Selenium/Katalon automation."
   },
   {
     step: "02",
     range: "2021",
-    title: "Domain QA Expansion",
-    copy: "Moved into KYC-OCR, mobile, API, and SQL validation with tighter quality and data-sensitive flows."
+    title: "Domain QA Specialist",
+    copy: "Expanded into fintech with eKYC, face matching, mobile, API, and SQL validation in trust-sensitive flows."
   },
   {
     step: "03",
-    range: "2021 - 2023",
-    title: "Automation Expansion",
-    copy: "Covered e-commerce flows across web, mWeb, and app while growing Postman automation and release coordination."
+    range: "2021 – 2023",
+    title: "Automation Engineer",
+    copy: "Grew API automation, E2E voucher flows, JMeter performance testing, and cross-platform e-commerce coverage."
   },
   {
     step: "04",
-    range: "2023 - 2025",
-    title: "Product QA at Scale",
-    copy: "Operated in high-scale product environments where quality had to align with platform behavior and speed."
+    range: "2023 – 2025",
+    title: "Senior Product QA",
+    copy: "Owned payment system quality at scale — Selenium Java, API testing, and release coordination in ShopeeFood."
   },
   {
     step: "05",
-    range: "2025 - Now",
-    title: "Framework Builder",
-    copy: "Shifted toward automation systems, framework architecture, and engineering-level quality ownership."
+    range: "2025 – Now",
+    title: "Quality Engineer",
+    copy: "Leading fullstack QA at Elfie with Playwright framework architecture, BDD, and CI/CD pipeline integration."
   },
   {
     step: "06",
     range: "Next",
-    title: "Agent-Q Platform",
-    copy: "Evolving toward reusable quality platforms, evaluation workflows, and AI-assisted QA systems."
+    title: "AI-Driven QE Leader",
+    copy: "Evolving toward AI-assisted test design, quality intelligence, failure pattern detection, and engineering productivity."
   }
 ];
 
 const timeline = [
   {
-    year: "May 2025 - Present",
-    company: "Elfie",
+    year: "May 2025 – Present",
+    company: "Elfie Health",
     logo: "logo-elfie.jpeg",
-    title: "Sr Fullstack Quality Assurance",
-    intro: "Leading fullstack quality with stronger ownership across systems, automation, and product confidence.",
-    copy: "Working across product quality, automation direction, and fullstack validation with a stronger focus on scalable systems and engineering-level quality ownership.",
+    title: "Senior Full-stack QA",
+    intro: "Leading quality for Web and Mobile applications with framework-first automation.",
+    copy: "Design comprehensive testing strategies, collaborate with developers and stakeholders, and convert manual coverage into scalable automation assets.",
     points: [
-      "Own quality across broader system flows rather than isolated test execution.",
-      "Push QA toward reusable automation and stronger engineering collaboration.",
-      "Focus on scalable quality practices that can grow into framework and platform work."
+      "Built Playwright automation framework from scratch with POM, reusable utilities, and environment management.",
+      "Implemented HTML/Allure reporting and executed automation in regression cycles via GitLab CI/CD.",
+      "Applied BDD principles using Cucumber and participated in requirement analysis and risk identification."
     ]
   },
   {
-    year: "Nov 2023 - Apr 2025",
-    company: "Shopee",
+    year: "Nov 2023 – Apr 2025",
+    company: "ShopeeFood",
     logo: "logo-shopee.jpeg",
-    title: "Product Quality Assurance",
-    intro: "Driving product quality inside a high-scale consumer platform with fast release cadence.",
-    copy: "Owned product quality in a large-scale environment, working closely with release flow, platform behavior, and cross-functional teams in an on-site product organization.",
+    title: "Senior QA",
+    intro: "Payment systems quality across ShopeePay, vouchers, and partner promotions.",
+    copy: "End-to-end payment validation in a high-scale consumer platform, working with CyberSource, MoMo, VNPAY, and Internet Banking integrations.",
     points: [
-      "Validated product behavior in a scale-sensitive environment with fast shipping cycles.",
-      "Worked closely with release flow, platform quality, and cross-functional execution.",
-      "Built stronger instincts for quality prioritization under product speed constraints."
+      "Automated regression using Selenium Java with API testing and SQL backend validation.",
+      "Validated payment, voucher package, and partner promotion flows with exploratory and UX testing.",
+      "Supported release quality in a fast-paced product organization with cross-functional teams."
     ]
   },
   {
-    year: "Dec 2021 - Oct 2023",
-    company: "TIKI",
+    year: "Jan 2022 – Oct 2023",
+    company: "Tiki Corporation",
     logo: "logo-tiki.jpeg",
-    title: "Quality Control Specialist",
-    intro: "Expanded from execution into automation, release coordination, and cross-platform e-commerce quality.",
-    copy: "Handled testing across Web, mWeb, and App; worked with GA4 and e-commerce flows like vouchers and payments; led small-team task assignment and release timeline control; built API automation with Postman; and gained hands-on automation experience with Selenium and Playwright. Successful projects included E-voucher on Tiki and Ticketbox.",
+    title: "Senior QC",
+    intro: "E-voucher platform and Ticketbox quality with automation and performance testing.",
+    copy: "Expanded from execution into API automation, E2E voucher purchase flows, and JMeter performance testing across Web, mWeb, and App.",
     points: [
-      "Tested across Web, mWeb, and App instead of working in a single QA surface.",
-      "Covered GA4-sensitive and commerce-heavy flows including voucher and payment behavior.",
-      "Led small-team task assignment, timeline control, and release reporting.",
-      "Built API automation with Postman and strengthened hands-on exposure to Selenium and Playwright."
+      "Built API automation flows with Postman and E2E automation with Selenium.",
+      "Performed performance testing using JMeter on critical commerce journeys.",
+      "Led small-team task assignment, timeline control, and release reporting."
     ]
   },
   {
-    year: "Mar 2021 - Nov 2021",
-    company: "MoMo",
+    year: "Mar 2021 – Nov 2021",
+    company: "MoMo E-Wallet",
     logo: "logo-momo.jpeg",
-    title: "Quality Assurance Specialist (KYC-OCR)",
-    intro: "Focused on trust-heavy wallet flows where mobile, API, and data validation had to be precise.",
-    copy: "Worked in the KYC-OCR e-wallet domain with strong exposure to mobile app testing, API testing, and SQL-based validation.",
+    title: "QC Engineer",
+    intro: "Trust-sensitive fintech flows: eKYC, face matching, and wallet features.",
+    copy: "System, integration, and GUI testing for eKYC, face matching, passwordless login, My Wallet, and MoMo City features.",
     points: [
-      "Worked in a trust-sensitive KYC-OCR domain with higher correctness demands.",
-      "Covered mobile app testing, API testing, and SQL-based data checks.",
-      "Built stronger validation discipline across product behavior and backend data."
+      "Executed A/B testing and requirement analysis for mobile wallet onboarding flows.",
+      "Validated backend data integrity with SQL across authentication journeys.",
+      "Worked in a compliance-sensitive domain where defects directly affect user trust."
     ]
   },
   {
-    year: "Jun 2018 - Feb 2021",
+    year: "2018 – Feb 2021",
     company: "Kyanon Digital",
     logo: "logo-kyanon.jpeg",
-    title: "Quality Control Specialist",
-    intro: "Built the foundation through multi-project QA work and early automation adoption in Scrum teams.",
-    copy: "Started in multi-project manual testing under Scrum delivery, then built early automation scripts with Katalon and Java Selenium for web products.",
+    title: "QC Engineer",
+    intro: "Multi-project QA foundation with early automation and SDET process adoption.",
+    copy: "Delivered QA across Samsung, Nippon, Our Better World, and NgayDauTien with Scrum-based delivery and client support.",
     points: [
-      "Handled QA across multiple projects rather than a single product line.",
-      "Worked in Scrum delivery and learned structured collaboration with developers and PMs.",
-      "Started automation with Katalon and Java Selenium for web products."
+      "Implemented SDET processes and built automation with Selenium and Katalon Studio.",
+      "Handled requirement analysis, test planning, and cross-project coordination.",
+      "Built communication, stakeholder management, and mentoring foundations."
     ]
   }
 ];
 
 const blogPosts = [
   {
-    tag: "Framework",
-    title: "How I Built a Playwright Framework That Scales",
-    copy: "Structure, abstractions, reporting, and the tradeoffs behind framework decisions that survive team growth."
+    tag: "AI Testing",
+    title: "AI-Assisted Test Case Generation",
+    copy: "Using ChatGPT, Codex, and Cursor to accelerate boundary analysis, requirement review, and test design without sacrificing quality rigor."
   },
   {
-    tag: "Career",
-    title: "Lessons After 5 Years in QA",
-    copy: "What changed when QA moved from execution support to engineering systems and product quality strategy."
+    tag: "Automation",
+    title: "Building a Playwright Framework That Scales",
+    copy: "POM architecture, API layer design, Ajv schema validation, environment management, and Allure reporting integrated with GitLab CI/CD."
   },
   {
-    tag: "API",
-    title: "API Automation Patterns I Reuse Across Projects",
-    copy: "A practical breakdown of test clients, data handling, assertions, and environment design for backend testing."
+    tag: "Quality Engineering",
+    title: "From Defect Detection to Defect Prevention",
+    copy: "How shift-left testing, risk-based planning, and early design review participation change the QA role from gatekeeper to quality partner."
   },
   {
-    tag: "CI/CD",
-    title: "CI/CD for Testers: Making Automation Matter",
-    copy: "How to wire automated checks into pipelines so results influence release confidence rather than sit in reports."
+    tag: "AI Intelligence",
+    title: "Quality Intelligence with AI Tools",
+    copy: "Failure pattern detection, root cause suggestion, regression impact analysis, and automated quality metrics for smarter release decisions."
   }
 ];
 
@@ -275,17 +419,29 @@ function appendChips(container, items, className) {
   });
 }
 
-function renderSkills() {
-  const container = document.querySelector("#skills-grid");
+function renderSkillCards(containerId, data) {
+  const container = document.querySelector(containerId);
   const template = document.querySelector("#skill-template");
 
-  skills.forEach((skill) => {
+  data.forEach((skill) => {
     const fragment = template.content.cloneNode(true);
     fragment.querySelector(".skill-label").textContent = skill.label;
     fragment.querySelector(".skill-title").textContent = skill.title;
     appendChips(fragment.querySelector(".chip-row"), skill.items, "chip");
     container.appendChild(fragment);
   });
+}
+
+function renderSkills() {
+  renderSkillCards("#skills-grid", skills);
+}
+
+function renderDomains() {
+  renderSkillCards("#domains-grid", domains);
+}
+
+function renderCertifications() {
+  renderSkillCards("#cert-grid", certifications);
 }
 
 function renderProjects() {
@@ -394,4 +550,6 @@ renderProjects();
 renderMetrics();
 renderRoadmap();
 renderTimeline();
+renderDomains();
 renderBlogPosts();
+renderCertifications();
