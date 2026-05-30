@@ -1,54 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function () {
+        var theme = localStorage.getItem("theme");
+        document.documentElement.setAttribute(
+          "data-theme",
+          theme === "light" || theme === "dark" ? theme : "dark"
+        );
+      })();
+    </script>
     <title>Van Nguyen | Senior QA Automation Engineer</title>
     <meta
       name="description"
       content="Senior QA Automation Engineer with 7+ years across E-commerce, Fintech, and Healthcare. Playwright frameworks, API testing, CI/CD, and AI-assisted quality engineering."
     />
-    <meta name="theme-color" content="#06080f" />
+    <meta name="theme-color" content="#050810" />
     <meta property="og:title" content="Van Nguyen | Senior QA Automation Engineer" />
     <meta
       property="og:description"
       content="Building scalable quality engineering solutions through automation, data-driven practices, and AI-assisted testing."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="ethan-portrait.jpg" />
+    <meta property="og:image" content="van-hero-poster.png" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Van Nguyen | Senior QA Automation Engineer" />
     <meta
       name="twitter:description"
       content="Building scalable quality engineering solutions through automation, data-driven practices, and AI-assisted testing."
     />
-    <meta name="twitter:image" content="ethan-portrait.jpg" />
+    <meta name="twitter:image" content="van-hero-poster.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="ambient-layer" aria-hidden="true">
+      <span class="orb orb-1"></span>
+      <span class="orb orb-2"></span>
+      <span class="orb orb-3"></span>
+    </div>
     <div class="page-shell">
       <header class="hero" id="top">
         <nav class="topbar" aria-label="Primary">
           <a class="brand" href="#top">VAN NGUYEN</a>
-          <div class="nav-links">
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#timeline">Experience</a>
-            <a href="#philosophy">Philosophy</a>
-            <a href="#contact">Contact</a>
+          <div class="topbar-end">
+            <div class="nav-links">
+              <a href="#skills">Skills</a>
+              <a href="#projects">Projects</a>
+              <a href="#impact">Impact</a>
+              <a href="#timeline">Experience</a>
+              <a href="#philosophy">Philosophy</a>
+              <a href="#certifications">Certs</a>
+              <a href="#contact">Contact</a>
+            </div>
+            <button
+              class="theme-toggle"
+              id="theme-toggle"
+              type="button"
+              aria-label="Switch to light theme"
+              aria-pressed="false"
+            >
+              <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="1.8" />
+                <path
+                  d="M12 2v2.5M12 19.5V22M4.5 12H2M22 12h-2.5M5.6 5.6l1.8 1.8M16.6 16.6l1.8 1.8M18.4 5.6l-1.8 1.8M7.4 16.6l-1.8 1.8"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M20 14.5A7.5 7.5 0 0 1 9.5 4 6.5 6.5 0 1 0 20 14.5Z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
           </div>
         </nav>
 
         <div class="hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow">Senior QA Automation Engineer Portfolio</p>
-            <h1>Hi, I'm Van Nguyen.</h1>
+            <p class="eyebrow">Senior QA Automation Engineer</p>
+            <h1 class="hero-title">
+              <span class="hero-greeting">Hi, I'm</span>
+              <span class="hero-name">Van Nguyen</span>
+            </h1>
             <p class="hero-role">
               Senior QA Automation Engineer | Quality Engineer | AI-Driven Testing Advocate
             </p>
@@ -71,6 +120,7 @@
             </div>
             <div class="cta-row">
               <a class="button button-primary" href="#projects">View Projects</a>
+              <a class="button button-download" href="Van-Nguyen-CV.pdf" download="Van-Nguyen-CV.pdf">Download CV</a>
               <a class="button" href="mailto:vanphi313@gmail.com">Email Me</a>
               <a class="button" href="https://www.linkedin.com/in/v%C3%A2n-nguy%E1%BB%85n-qavn1997" target="_blank" rel="noreferrer">LinkedIn</a>
             </div>
@@ -80,13 +130,13 @@
             <div class="avatar-block">
               <img
                 class="portrait-image"
-                src="ethan-portrait.jpg"
-                alt="Portrait of Van Nguyen"
+                src="van-hero-poster.png"
+                alt="Van Nguyen — Quality Today, Trust Tomorrow"
               />
               <div class="portrait-overlay"></div>
               <div class="portrait-badge">
-                <span class="portrait-badge-label">Quality Engineer</span>
-                <strong>Automation + AI</strong>
+                <span class="portrait-badge-label">Quality Today</span>
+                <strong>Trust Tomorrow</strong>
               </div>
             </div>
             <div class="status-strip" aria-label="Coverage areas">
@@ -113,21 +163,54 @@
             <p class="eyebrow">About</p>
             <h2>Quality engineering beyond finding defects</h2>
           </div>
-          <div class="about-grid">
-            <p class="about-copy">
-              I view quality as a shared responsibility across the entire
-              development team — not something isolated to QA at the end of a
-              sprint. My goal is to prevent defects through shift-left testing,
-              risk-based planning, and automation-first practices that build
-              confidence in every release.
-            </p>
-            <p class="about-copy">
-              Based in Ho Chi Minh City, Vietnam. Career goal: build scalable
-              quality engineering solutions through automation, data-driven
-              quality practices, and AI-assisted testing. Education: Bachelor
-              of Information Technology, Ho Chi Minh City University of
-              Technology and Education (2015–2019, GPA ~7.48/10).
-            </p>
+          <div class="about-bento">
+            <article class="about-panel about-philosophy reveal">
+              <p class="about-philosophy-text">
+                I view quality as a shared responsibility across the entire development team — not something isolated to QA at the end of a sprint.
+              </p>
+              <dl class="about-quickfacts">
+                <div>
+                  <dt>Location</dt>
+                  <dd>Ho Chi Minh City, Vietnam</dd>
+                </div>
+                <div>
+                  <dt>Career goal</dt>
+                  <dd>Scalable quality engineering through automation, data-driven practices, and AI-assisted testing.</dd>
+                </div>
+              </dl>
+            </article>
+
+            <article class="about-panel about-education-panel reveal">
+              <p class="about-label">Education</p>
+              <div class="education-block">
+                <div class="school-flip" tabindex="0" role="button" aria-label="Flip to view GPA">
+                  <div class="school-flip-inner">
+                    <div class="school-face school-face-front">
+                      <img src="logo-hcmute.png" alt="HCMUTE logo" class="school-logo" />
+                    </div>
+                    <div class="school-face school-face-back">
+                      <div class="school-gpa" aria-hidden="true">
+                        <span class="school-gpa-label">GPA</span>
+                        <span class="school-gpa-value">7.48</span>
+                        <span class="school-gpa-scale">/10</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="education-details">
+                  <p class="education-degree">Bachelor of Information Technology</p>
+                  <p class="education-school">Ho Chi Minh City University of Technology and Education</p>
+                  <p class="education-short">HCMUTE</p>
+                  <div class="education-clc">
+                    <p class="education-clc-title">Faculty for High Quality Training (CLC)</p>
+                  </div>
+                  <div class="education-meta">
+                    <span class="education-chip">2015–2019</span>
+                    <span class="education-chip education-chip-clc">CLC Program</span>
+                  </div>
+                </div>
+              </div>
+            </article>
           </div>
         </section>
 
@@ -147,6 +230,54 @@
           <div id="projects-grid" class="project-grid" aria-label="Project list"></div>
         </section>
 
+        <section class="content-section" id="impact">
+          <div class="section-heading">
+            <p class="eyebrow">GitLab Impact</p>
+            <h2>Playwright E2E framework — measurable ownership</h2>
+          </div>
+          <p class="impact-intro">
+            Contribution analysis from the <strong>e2e-tests</strong> repository
+            (Mar 2026 – May 2026), filtered by authored commits — excluding generated OpenAPI
+            artifacts and test-data noise.
+          </p>
+          <div id="impact-stats" class="impact-stats" aria-label="Contribution snapshot"></div>
+          <blockquote class="impact-quote reveal">
+            Built and scaled API/UI automation for a Playwright-based E2E framework, owning test
+            coverage across Seller Platform, Promotion Engine, and reporting infrastructure.
+            Delivered reusable API helpers, stabilized flaky flows, expanded CI/report visibility
+            through GitLab Pages, Cloudflare, and ReportPortal, and improved team productivity
+            with automation scripts and testing guidelines.
+          </blockquote>
+          <ul id="impact-highlights" class="impact-highlights" aria-label="Impact highlights"></ul>
+          <div class="impact-charts">
+            <article class="chart-card reveal">
+              <p class="chart-eyebrow">Trend</p>
+              <h3>Commits by month</h3>
+              <div id="commit-chart" class="commit-chart" aria-label="Monthly commit trend"></div>
+            </article>
+            <article class="chart-card reveal">
+              <p class="chart-eyebrow">Focus</p>
+              <h3>Contribution by workstream</h3>
+              <div id="workstream-chart" class="h-bar-chart" aria-label="Workstream line changes"></div>
+            </article>
+            <article class="chart-card chart-card-wide reveal">
+              <p class="chart-eyebrow">Coverage</p>
+              <h3>API domains — seller platform</h3>
+              <div id="domain-chart" class="h-bar-chart" aria-label="API domain touch frequency"></div>
+            </article>
+          </div>
+          <div class="impact-proof reveal">
+            <p class="chart-eyebrow">Interview proof</p>
+            <h3>What the data shows</h3>
+            <ul id="proof-points" class="proof-points"></ul>
+          </div>
+          <p class="impact-source">
+            Source: local <code>git log</code> in e2e-tests · van.nguyenphi@kyanon.digital ·
+            metrics exclude <code>data/*.openapi.json</code>, manual-import CSV, and
+            <code>.test-data/*</code>
+          </p>
+        </section>
+
         <section class="content-section" id="metrics">
           <div class="section-heading">
             <p class="eyebrow">Metrics</p>
@@ -160,27 +291,27 @@
             <p class="eyebrow">Architecture</p>
             <h2>Playwright automation framework model</h2>
           </div>
-          <div class="architecture-card">
+          <div class="architecture-card reveal">
             <div class="architecture-flow">
-              <div class="arch-node">
+              <div class="arch-node reveal">
                 <span class="arch-label">Layer 01</span>
                 <strong>Test Suites</strong>
                 <p>UI, API, smoke, regression, and end-to-end release checks.</p>
               </div>
-              <div class="arch-arrow"></div>
-              <div class="arch-node">
+              <div class="arch-arrow reveal"></div>
+              <div class="arch-node reveal">
                 <span class="arch-label">Layer 02</span>
                 <strong>Page Objects &amp; API Layer</strong>
                 <p>POM components, API clients, fixtures, and reusable test data.</p>
               </div>
-              <div class="arch-arrow"></div>
-              <div class="arch-node">
+              <div class="arch-arrow reveal"></div>
+              <div class="arch-node reveal">
                 <span class="arch-label">Layer 03</span>
                 <strong>Core Utilities</strong>
                 <p>Environment config, Ajv schema validation, helpers, and retry logic.</p>
               </div>
-              <div class="arch-arrow"></div>
-              <div class="arch-node">
+              <div class="arch-arrow reveal"></div>
+              <div class="arch-node reveal">
                 <span class="arch-label">Layer 04</span>
                 <strong>Reporting + CI/CD</strong>
                 <p>Allure reports, GitLab CI/CD pipelines, and automated quality gates.</p>
@@ -255,9 +386,9 @@
         <section class="content-section" id="certifications">
           <div class="section-heading">
             <p class="eyebrow">Certifications</p>
-            <h2>Continuous learning</h2>
+            <h2>Verified credentials</h2>
           </div>
-          <div id="cert-grid" class="skills-grid" aria-label="Certifications"></div>
+          <div id="cert-grid" class="cert-gallery" aria-label="Certifications"></div>
         </section>
 
         <section class="content-section contact-section" id="contact">
@@ -271,10 +402,14 @@
               API testing, CI/CD integration, and AI-assisted quality engineering.
             </p>
             <div class="contact-links">
+              <a class="contact-link contact-link-cv" href="Van-Nguyen-CV.pdf" download="Van-Nguyen-CV.pdf">Download CV (PDF)</a>
               <a class="contact-link" href="mailto:vanphi313@gmail.com">vanphi313@gmail.com</a>
-              <a class="contact-link" href="tel:+84707828481">0707828481</a>
               <span class="contact-link">Ho Chi Minh City, Vietnam</span>
               <a class="contact-link" href="https://www.linkedin.com/in/v%C3%A2n-nguy%E1%BB%85n-qavn1997" target="_blank" rel="noreferrer">LinkedIn</a>
+            </div>
+            <div class="cta-row contact-actions">
+              <a class="button button-primary" href="Van-Nguyen-CV.pdf" download="Van-Nguyen-CV.pdf">Download CV</a>
+              <a class="button" href="mailto:vanphi313@gmail.com">Email Me</a>
             </div>
           </div>
         </section>
@@ -353,6 +488,34 @@
         <p class="blog-copy"></p>
       </article>
     </template>
+
+    <template id="cert-template">
+      <article class="cert-card">
+        <div class="cert-visual">
+          <div class="cert-shine" aria-hidden="true"></div>
+          <img class="cert-image" alt="" loading="lazy" />
+          <span class="cert-badge">Verified</span>
+        </div>
+        <div class="cert-body">
+          <p class="cert-issuer"></p>
+          <h3 class="cert-title"></h3>
+          <p class="cert-meta"></p>
+          <div class="cert-actions">
+            <button class="cert-view button button-primary" type="button">View Certificate</button>
+            <a class="cert-link button" target="_blank" rel="noreferrer">Open Original</a>
+          </div>
+        </div>
+      </article>
+    </template>
+
+    <div class="cert-lightbox" id="cert-lightbox" hidden aria-hidden="true">
+      <div class="cert-lightbox-backdrop" data-close-lightbox></div>
+      <div class="cert-lightbox-dialog" role="dialog" aria-modal="true" aria-label="Certificate preview">
+        <button class="cert-lightbox-close" type="button" aria-label="Close certificate preview">&times;</button>
+        <img class="cert-lightbox-image" alt="" />
+        <p class="cert-lightbox-caption"></p>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>
